@@ -14,7 +14,13 @@ class NumbersToWords {
   static String convert(double number) {
     int wholeNumber = number.floor();
     int decimalPart = ((number - wholeNumber) * 100).round();
-    return '${_convertWhole(wholeNumber)} point ${_convertWhole(decimalPart)}';
+
+    // Check if the decimal part is zero, omit "point zero zero" if so
+    if (decimalPart == 0) {
+      return _convertWhole(wholeNumber);
+    } else {
+      return '${_convertWhole(wholeNumber)} point ${_convertWhole(decimalPart)}';
+    }
   }
 
   static String _convertWhole(int number) {
