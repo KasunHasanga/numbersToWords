@@ -1,12 +1,34 @@
-// import 'package:flutter_test/flutter_test.dart';
-//
-// import 'package:numbers_to_words/numbers_to_words.dart';
-//
-// void main() {
-//   test('adds one to input values', () {
-//     final calculator = Calculator();
-//     expect(calculator.addOne(2), 3);
-//     expect(calculator.addOne(-7), -6);
-//     expect(calculator.addOne(0), 1);
-//   });
-// }
+import 'package:flutter_test/flutter_test.dart';
+
+import 'package:numbers_to_words/numbers_to_words.dart';
+
+
+void main() {
+
+  //normal
+  test('converts 100 to words', () {
+    expect(NumbersToWords.convert(100.00), 'one hundred');
+  });
+
+  test('converts 10 to words', () {
+    expect(NumbersToWords.convert(10.00), 'ten');
+  });
+  test('converts 1 to words', () {
+    expect(NumbersToWords.convert(1.00), 'one');
+  });
+
+  //medium
+  test('converts 102 to words', () {
+    expect(NumbersToWords.convert(102.00), 'one hundred two');
+  });
+
+  //hard
+  test('converts 1234.56 to words', () {
+    expect(NumbersToWords.convert(1234.56), 'one thousand two hundred thirty four point fifty six');
+  });
+
+  test('converts 0.99 to words', () {
+    expect(NumbersToWords.convert(0.99), 'zero point ninety nine');
+  });
+}
+
