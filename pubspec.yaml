@@ -1,5 +1,5 @@
-name: numbers_to_words
-description: "Flutter pakcage that ability to convert numbers to words"
+name: double_to_words
+description: "Flutter package that ability to convert numbers to words"
 version: 0.0.1
 homepage:
 

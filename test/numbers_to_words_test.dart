@@ -1,10 +1,7 @@
+import 'package:double_to_words/numbers_to_words.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:numbers_to_words/numbers_to_words.dart';
-
-
 void main() {
-
   //normal
   test('converts 100 to words', () {
     expect(NumbersToWords.convert(100.00), 'one hundred');
@@ -24,11 +21,11 @@ void main() {
 
   //hard
   test('converts 1234.56 to words', () {
-    expect(NumbersToWords.convert(1234.56), 'one thousand two hundred thirty four point fifty six');
+    expect(NumbersToWords.convert(1234.56),
+        'one thousand two hundred thirty four point fifty six');
   });
 
   test('converts 0.99 to words', () {
     expect(NumbersToWords.convert(0.99), 'zero point ninety nine');
   });
 }
-
