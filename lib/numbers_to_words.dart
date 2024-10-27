@@ -1,20 +1,52 @@
 class NumbersToWords {
   static const _ones = [
-    '', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'
+    '',
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine'
   ];
   static const _teens = [
-    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen',
-    'seventeen', 'eighteen', 'nineteen'
+    'ten',
+    'eleven',
+    'twelve',
+    'thirteen',
+    'fourteen',
+    'fifteen',
+    'sixteen',
+    'seventeen',
+    'eighteen',
+    'nineteen'
   ];
   static const _tens = [
-    '', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'
+    '',
+    '',
+    'twenty',
+    'thirty',
+    'forty',
+    'fifty',
+    'sixty',
+    'seventy',
+    'eighty',
+    'ninety'
   ];
   static const _thousands = ['', 'thousand', 'million', 'billion', 'trillion'];
 
   static String convert(double number) {
     int wholeNumber = number.floor();
     int decimalPart = ((number - wholeNumber) * 100).round();
-    return '${_convertWhole(wholeNumber)} point ${_convertWhole(decimalPart)}';
+
+    // Check if the decimal part is zero, omit "point zero zero" if so
+    if (decimalPart == 0) {
+      return _convertWhole(wholeNumber);
+    } else {
+      return '${_convertWhole(wholeNumber)} point ${_convertWhole(decimalPart)}';
+    }
   }
 
   static String _convertWhole(int number) {
@@ -23,7 +55,8 @@ class NumbersToWords {
     String result = '';
     while (number > 0) {
       if (number % 1000 != 0) {
-        result = '${_convertHundreds(number % 1000)} ${_thousands[thousandCounter]} $result';
+        result =
+            '${_convertHundreds(number % 1000)} ${_thousands[thousandCounter]} $result';
       }
       number ~/= 1000;
       thousandCounter++;
