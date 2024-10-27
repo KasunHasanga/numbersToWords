@@ -40,16 +40,13 @@ Convert any double number into its word format:
 
 dart
 
-
     double amount = 2045.75;
     String words = DoubleToWords.convert(amount);
-    print(words); // "two thousand forty-five point seventy-five"` 
+    print(words); // "two thousand forty five point seventy five"` 
 
 ## Testing
 
 Run the tests to verify functionality:
-
-bash
 
 `flutter test`
 
