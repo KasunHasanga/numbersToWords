@@ -50,6 +50,10 @@ Run the tests to verify functionality:
 
 `flutter test`
 
+## Contributing
+
+We welcome contributions to enhance this starter project. If you have suggestions or improvements, please create an issue or submit a pull request.
+
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
