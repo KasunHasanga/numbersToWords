@@ -5,3 +5,8 @@
 
 * add example
 * update readme file to human readable
+
+## 0.0.4
+
+* add documentation and API reference
+
