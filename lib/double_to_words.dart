@@ -86,7 +86,7 @@ class DoubleToWords {
     while (number > 0) {
       if (number % 1000 != 0) {
         result =
-        '${_convertHundreds(number % 1000)} ${_thousands[thousandCounter]} $result';
+            '${_convertHundreds(number % 1000)} ${_thousands[thousandCounter]} $result';
       }
       number ~/= 1000;
       thousandCounter++;
