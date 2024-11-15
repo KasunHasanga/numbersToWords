@@ -1,4 +1,4 @@
-class NumbersToWords {
+class DoubleToWords {
   static const _ones = [
     '',
     'one',

@@ -1,4 +1,4 @@
-import 'package:double_to_words/numbers_to_words.dart';
+import 'package:double_to_words/double_to_words.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -45,16 +45,16 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              '102.00 in words :${NumbersToWords.convert(102.00)}',
+              '102.00 in words :${DoubleToWords.convert(102.00)}',
             ),
             Text(
-              '1234.56 in words :${NumbersToWords.convert(1234.56)}',
+              '1234.56 in words :${DoubleToWords.convert(1234.56)}',
             ),
             Text(
-              '0.99 in words :${NumbersToWords.convert(0.99)}',
+              '0.99 in words :${DoubleToWords.convert(0.99)}',
             ),
             Text(
-              '11 in words :${NumbersToWords.convert(11)}',
+              '11 in words :${DoubleToWords.convert(11)}',
             ),
           ],
         ),
