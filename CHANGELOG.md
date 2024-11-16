@@ -6,7 +6,7 @@
 * add example
 * update readme file to human readable
 
-## 0.0.4
+## 0.0.4+1
 
 * add documentation and API reference
 

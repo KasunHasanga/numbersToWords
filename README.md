@@ -16,7 +16,7 @@ Add this to your `pubspec.yaml`:
 yaml
 
     dependencies:
-	  double_to_words: ^0.0.4
+	  double_to_words: ^0.0.4+1
 
 Then run:
 
