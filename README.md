@@ -1,5 +1,5 @@
 
-# NumbersToWords
+# DoubleToWords
 
 A simple Dart package for converting double numbers to their word representation. Useful for creating more readable representations of numbers in apps, documents, and educational materials!
 
@@ -16,7 +16,7 @@ Add this to your `pubspec.yaml`:
 yaml
 
     dependencies:
-	  double_to_words: ^1.0.0
+	  double_to_words: ^0.0.4+1
 
 Then run:
 

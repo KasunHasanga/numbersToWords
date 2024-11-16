@@ -1,6 +1,6 @@
 name: double_to_words
-description: "Flutter package that ability to convert numbers to words"
-version: 0.0.1
+description: "A Flutter package to convert numbers, including decimals, into readable words. Ideal for financial, educational, or accessibility-focused applications."
+version: 0.0.4+1
 homepage: https://github.com/KasunHasanga/numbersToWords
 
 environment:
@@ -18,3 +18,4 @@ dev_dependencies:
 
 
 flutter:
+  uses-material-design: true
