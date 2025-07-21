@@ -10,3 +10,7 @@
 
 * add documentation and API reference
 
+## 0.0.5
+
+* Compatible latest dart version =>  3.8.1
+
